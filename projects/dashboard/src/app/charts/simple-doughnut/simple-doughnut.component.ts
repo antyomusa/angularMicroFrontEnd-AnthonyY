@@ -12,6 +12,7 @@ export class SimpleDoughnutComponent {
 
   constructor() {
     this.options = {
+      height: 600,
       autoSize: true,
       data,
       title: {
@@ -19,8 +20,16 @@ export class SimpleDoughnutComponent {
         fontSize: 18,
         spacing: 25,
       },
+      legend: {
+        position: "right",
+        item: {
+          marker: {
+              size: 40
+          }
+      }
+      },
       footnote: {
-        text: 'Source: Catatan yang dikirimkan Bank Administrator RDN kepada KSEI',
+        text: 'Source: Catatan yang dikirimkan Bank Administrator RDN kepada',
       },
       series: [
         {

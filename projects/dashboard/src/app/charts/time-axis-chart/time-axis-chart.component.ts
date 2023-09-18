@@ -52,7 +52,7 @@ export class TimeAxisChartComponent {
         {
           data: data.ci,
           type: 'line',
-          title: 'Reksadana Dana Pensilangan',
+          title: 'Saham',
           xKey: 'time',
           yKey: 'magnitude',
         },

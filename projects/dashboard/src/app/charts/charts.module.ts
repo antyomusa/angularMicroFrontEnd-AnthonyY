@@ -5,8 +5,6 @@ import { ChartsRoutingModule } from './charts-routing.module';
 import { ChartsComponent } from './charts.component';
 import { ColumnChartComponent } from './column-chart/column-chart.component';
 import { TimeAxisChartComponent } from './time-axis-chart/time-axis-chart.component';
-import { BasicChartComponent } from './basic-chart/basic-chart.component';
-import { LineGapsComponent } from './line-gaps/line-gaps.component';
 import { SimpleDoughnutComponent } from './simple-doughnut/simple-doughnut.component';
 
 
@@ -15,8 +13,6 @@ import { SimpleDoughnutComponent } from './simple-doughnut/simple-doughnut.compo
     ChartsComponent,
     ColumnChartComponent,
     TimeAxisChartComponent,
-    BasicChartComponent,
-    LineGapsComponent,
     SimpleDoughnutComponent
   ],
   imports: [
