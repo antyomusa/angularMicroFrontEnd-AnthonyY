@@ -37,12 +37,12 @@ export class TimeAxisChartComponent {
       },
       autoSize: true,
       title: {
-        text: 'Earthquake Magnitudes by Source',
+        text: 'Average Transaction Value Per User',
         fontSize: 18,
         spacing: 25,
       },
       footnote: {
-        text: 'Source: US Geological Survey',
+        text: 'Source: Catatan yang dikirimkan Bank Administrator RDN kepada KSEI',
       },
       padding: {
         left: 40,
@@ -52,28 +52,28 @@ export class TimeAxisChartComponent {
         {
           data: data.ci,
           type: 'line',
-          title: 'Southern California Seismic Network',
+          title: 'Reksadana Dana Pensilangan',
           xKey: 'time',
           yKey: 'magnitude',
         },
         {
           data: data.hv,
           type: 'line',
-          title: 'Hawaiian Volcano Observatory Network',
+          title: 'Reksadana Obligasi Pemerintah',
           xKey: 'time',
           yKey: 'magnitude',
         },
         {
           data: data.nc,
           type: 'line',
-          title: 'USGS Northern California Network',
+          title: 'Reksadana Pasar Uang',
           xKey: 'time',
           yKey: 'magnitude',
         },
         {
           data: data.ok,
           type: 'line',
-          title: 'Oklahoma Seismic Network',
+          title: 'Reksadana Campuran',
           xKey: 'time',
           yKey: 'magnitude',
         },
@@ -90,7 +90,7 @@ export class TimeAxisChartComponent {
           position: 'left',
           type: 'number',
           title: {
-            text: 'Magnitude',
+            text: 'In Indonesian Rupiah (Rp)',
           },
         },
       ],

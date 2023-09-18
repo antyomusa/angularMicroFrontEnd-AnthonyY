@@ -23,13 +23,8 @@ export class DataTableComponent {
       }
     );
 
-    const randomNumber = 1;
-    this.endPointService.saveUserData(randomNumber)
+    this.endPointService.saveUserData(1)
     
-  }
-
-  generateRandomNumber() {
-    return Math.floor(Math.random() * 10) + 1;
   }
 
   deletePost(){

@@ -11,20 +11,20 @@ export class BasicChartComponent {
 
   data = [
     {
-      quarter: 'Q1',
+      quarter: '2020',
       spending: 700,
     },
     {
-      quarter: 'Q2',
-      spending: 600,
+      quarter: '2021',
+      spending: 650,
     },
     {
-      quarter: 'Q3',
-      spending: 560,
+      quarter: '2022',
+      spending: 690,
     },
     {
-      quarter: 'Q4',
-      spending: 450,
+      quarter: '2023',
+      spending: 750,
     },
   ];
 

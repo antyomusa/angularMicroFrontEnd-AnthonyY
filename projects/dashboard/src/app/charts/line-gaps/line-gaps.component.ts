@@ -70,25 +70,25 @@ export class LineGapsComponent {
         },
       },
       title: {
-        text: 'Imported Banana Prices',
+        text: 'Average Revenue Per User',
         fontSize: 18,
         spacing: 25,
       },
       footnote: {
-        text: 'Source: Department for Environment, Food and Rural Affairs',
+        text: 'Source: Catatan yang dikirimkan Bank Administrator RDN kepada KSEI',
       },
       series: [
         {
           type: 'line',
           xKey: 'week',
-          yKey: 'belize',
-          yName: 'Belize',
+          yKey: 'ekuitas',
+          yName: 'Ekuitas',
         },
         {
           type: 'line',
           xKey: 'week',
-          yKey: 'cameroon',
-          yName: 'Cameroon',
+          yKey: 'rpt',
+          yName: 'Reksadana Pendapatan Tetap',
           marker: {
             strokeWidth: 2,
           },
@@ -96,20 +96,20 @@ export class LineGapsComponent {
         {
           type: 'line',
           xKey: 'week',
-          yKey: 'columbia',
-          yName: 'Columbia',
+          yKey: 'obligasi',
+          yName: 'Obligasi',
         },
         {
           type: 'line',
           xKey: 'week',
-          yKey: 'costaRica',
-          yName: 'Costa Rica',
+          yKey: 'kas',
+          yName: 'Kas',
         },
         {
           type: 'line',
           xKey: 'week',
-          yKey: 'dominicanRepublic',
-          yName: 'Dominican Republic',
+          yKey: 'rpu',
+          yName: 'Reksadana Pasar uang',
           marker: {
             strokeWidth: 2,
           },
@@ -117,8 +117,8 @@ export class LineGapsComponent {
         {
           type: 'line',
           xKey: 'week',
-          yKey: 'ecuador',
-          yName: 'Ecuador',
+          yKey: 'rdc',
+          yName: 'Reksadana Campuran',
           marker: {
             strokeWidth: 2,
           },
@@ -126,83 +126,11 @@ export class LineGapsComponent {
         {
           type: 'line',
           xKey: 'week',
-          yKey: 'ghana',
-          yName: 'Ghana',
+          yKey: 'rdp',
+          yName: 'Reksadana Dana Pensilangan',
           marker: {
             strokeWidth: 2,
           },
-        },
-        {
-          type: 'line',
-          xKey: 'week',
-          yKey: 'honduras',
-          yName: 'Honduras',
-        },
-        {
-          type: 'line',
-          xKey: 'week',
-          yKey: 'ivoryCoast',
-          yName: 'Ivory Coast',
-          marker: {
-            strokeWidth: 2,
-          },
-        },
-        {
-          type: 'line',
-          xKey: 'week',
-          yKey: 'jamaica',
-          yName: 'Jamaica',
-          marker: {
-            strokeWidth: 2,
-          },
-        },
-        {
-          type: 'line',
-          xKey: 'week',
-          yKey: 'mexico',
-          yName: 'Mexico',
-          marker: {
-            strokeWidth: 2,
-          },
-        },
-        {
-          type: 'line',
-          xKey: 'week',
-          yKey: 'panama',
-          yName: 'Panama',
-          marker: {
-            strokeWidth: 2,
-          },
-        },
-        {
-          type: 'line',
-          xKey: 'week',
-          yKey: 'windwardIsles',
-          yName: 'Windward Isles',
-          marker: {
-            strokeWidth: 2,
-          },
-        },
-        {
-          type: 'line',
-          xKey: 'week',
-          yKey: 'guatemala',
-          yName: 'Guatemala',
-        },
-        {
-          type: 'line',
-          xKey: 'week',
-          yKey: 'nicaragua',
-          yName: 'Nicaragua',
-          marker: {
-            fill: '#ffffff',
-          },
-        },
-        {
-          type: 'line',
-          xKey: 'week',
-          yKey: 'brazil',
-          yName: 'Brazil',
         },
       ],
       axes: [
@@ -220,7 +148,7 @@ export class LineGapsComponent {
           type: 'number',
           position: 'left',
           title: {
-            text: '£ per kg',
+            text: 'In Indonesian Rupiah (Rp)',
           },
           nice: false,
           min: 0.2,

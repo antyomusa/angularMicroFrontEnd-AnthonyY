@@ -15,12 +15,12 @@ export class SimpleDoughnutComponent {
       autoSize: true,
       data,
       title: {
-        text: 'Dwelling Fires (UK)',
+        text: 'Tabunganku',
         fontSize: 18,
         spacing: 25,
       },
       footnote: {
-        text: 'Source: Home Office',
+        text: 'Source: Catatan yang dikirimkan Bank Administrator RDN kepada KSEI',
       },
       series: [
         {
