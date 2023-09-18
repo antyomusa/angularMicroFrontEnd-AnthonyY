@@ -1,0 +1,20 @@
+<div class="container">
+    <a routerLink="/data">
+        Back
+    </a>
+    <section>
+        <form [formGroup]="postModel.formGroupEditPost">
+                <div class="form-group">
+                  <label>Title</label>
+                  <input type="text" class="form-control" formControlName="title" placeholder="Insert Title here" [ngStyle]="{'border-color': f['title'] && f['title'].invalid && f['title'].touched ? 'red' : ''}">
+                  <p class="text-danger" *ngIf="f['title'] && f['title'].invalid && f['title'].touched">Title is required</p>
+                </div>
+                <div class="form-group">
+                    <label>Body</label>
+                    <input type="text" class="form-control" formControlName="body" placeholder="Insert Body here" [ngStyle]="{'border-color': f['body'] && f['body'].invalid && f['body'].touched ? 'red' : ''}">
+                    <p class="text-danger" *ngIf="f['body'] && f['body'].invalid && f['body'].touched">Body is required</p>
+                </div>
+                <button type="submit" class="btn btn-primary" (click)="editPost()">Submit</button>
+        </form>
+    </section>
+</div>

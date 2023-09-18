@@ -1,0 +1,46 @@
+mat-sidenav-container {
+    height: 100% !important;
+}
+
+mat-sidenav {
+    padding: 16px;
+}
+
+mat-sidenav {
+    background-color: rgb(208, 39, 39);
+    width: 160px;
+    padding-top: 20px;
+
+    img {
+        border-radius: 5px;
+        margin-bottom: 25px;
+        cursor: pointer;
+    }
+
+    .menu-items {
+        margin-bottom: 25px;
+        color : rgb(226, 223, 223);
+        cursor: pointer;
+
+        p {
+            margin-left: 10px;
+        }
+    }
+
+    .menu-items:hover {
+        background-color: rgb(67, 67, 67);
+        border-radius: 5pxrgb(100, 99, 99)
+    }
+}
+
+.navbar {
+    padding: 16px
+}
+
+.navbar-brand {
+    cursor: pointer;
+}
+
+.navbar-brand:hover {
+    color: #006EFF;
+}

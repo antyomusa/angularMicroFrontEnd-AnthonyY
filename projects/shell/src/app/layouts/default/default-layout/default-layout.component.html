@@ -1,0 +1,28 @@
+<mat-sidenav-container>
+  <mat-sidenav [mode]="isLargeScreen() ? 'side' : 'over'" [(opened)]="opened">
+    <div routerLink="">
+      <img src="../../../../assets/angular-wide-logo.png" alt="wide-logo" width="100%">
+    </div>
+    <div routerLink="" class="btn d-flex align-items-center menu-items">
+      <fa-icon [icon]="faChartline" size="sm"></fa-icon>
+      <p  class="mb-0">Dashboard</p>
+    </div>
+    <div routerLink="data" class="btn d-flex align-items-center menu-items">
+      <fa-icon [icon]="faTable" size="sm"></fa-icon>
+      <p class="mb-0">Data Table</p>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <nav class="navbar bg-light sticky-top">
+      <span class="navbar-brand mb-0 h1" (click)="opened= !opened">
+        <fa-icon [icon]="faBars" size="lg"></fa-icon>
+      </span>
+      <form class="form-inline">
+        <img src="../../../../assets/angular-logo.svg" alt="angular-logo" width="35" height="35">
+      </form>
+    </nav>
+    <router-outlet></router-outlet>
+    
+    <app-footer-layout></app-footer-layout>
+  </mat-sidenav-content>
+</mat-sidenav-container>

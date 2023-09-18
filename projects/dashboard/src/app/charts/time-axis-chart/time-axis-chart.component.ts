@@ -1,0 +1,106 @@
+import { Component } from '@angular/core';
+import { AgChartOptions } from 'ag-charts-community';
+import { data } from './data';
+@Component({
+  selector: 'app-time-axis-chart',
+  templateUrl: './time-axis-chart.component.html',
+  styleUrls: ['./time-axis-chart.component.scss']
+})
+export class TimeAxisChartComponent {
+
+  public optionsTimeAxis: AgChartOptions;
+
+  constructor() {
+    this.optionsTimeAxis = {
+      theme: {
+        palette: {
+          fills: [
+            '#5BC0EB',
+            '#FDE74C',
+            '#9BC53D',
+            '#E55934',
+            '#FA7921',
+            '#fa3081',
+          ],
+          strokes: [
+            '#5BC0EB',
+            '#FDE74C',
+            '#9BC53D',
+            '#E55934',
+            '#FA7921',
+            '#fa3081',
+          ],
+        },
+        overrides: {
+          line: { series: { strokeWidth: 3, marker: { enabled: false } } },
+        },
+      },
+      autoSize: true,
+      title: {
+        text: 'Earthquake Magnitudes by Source',
+        fontSize: 18,
+        spacing: 25,
+      },
+      footnote: {
+        text: 'Source: US Geological Survey',
+      },
+      padding: {
+        left: 40,
+        right: 40,
+      },
+      series: [
+        {
+          data: data.ci,
+          type: 'line',
+          title: 'Southern California Seismic Network',
+          xKey: 'time',
+          yKey: 'magnitude',
+        },
+        {
+          data: data.hv,
+          type: 'line',
+          title: 'Hawaiian Volcano Observatory Network',
+          xKey: 'time',
+          yKey: 'magnitude',
+        },
+        {
+          data: data.nc,
+          type: 'line',
+          title: 'USGS Northern California Network',
+          xKey: 'time',
+          yKey: 'magnitude',
+        },
+        {
+          data: data.ok,
+          type: 'line',
+          title: 'Oklahoma Seismic Network',
+          xKey: 'time',
+          yKey: 'magnitude',
+        },
+      ],
+      axes: [
+        {
+          position: 'bottom',
+          type: 'time',
+          label: {
+            format: '%d/%m',
+          },
+        },
+        {
+          position: 'left',
+          type: 'number',
+          title: {
+            text: 'Magnitude',
+          },
+        },
+      ],
+      legend: {
+        item: {
+          marker: {
+            strokeWidth: 0,
+          },
+        },
+      },
+    };
+  }
+}
